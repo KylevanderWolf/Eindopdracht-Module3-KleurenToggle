@@ -1,0 +1,144 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    transition: 300ms ease-in-out
+}
+
+.colorText {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  background-color: #272727;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar{
+  position: fixed;
+  top: 50px;
+  left: 0px;
+}
+.sidebar-dropdown {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  align-items: center;
+  justify-content: center;    
+  }
+  
+.navbar-dropbtn {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  color: black;
+  outline: none;
+  text-decoration: none
+}
+
+#navbar-icon {
+  font-size: 1em;
+  color: white;
+}
+  
+
+.sidebar-dropdownContent {
+  visibility: hidden;
+  opacity: 0;
+  height: 300px;
+  width: 0px;
+  background-color: #272727;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-bottom-right-radius: 10px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.sidebar-dropdown ul {
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  }
+
+.sidebar-dropdownContent ul li {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+  }
+
+.sidebar-dropdownContent ul li button{
+  width: 100px;
+  cursor: pointer;
+  padding: 10px 10px;
+  outline: none;
+  transition: width 300ms ease-in-out;
+  box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.8);
+  border: 2px solid transparent;
+  }
+
+.redBtn {
+  background-color: red;
+}
+
+.orangeBtn {
+  background-color: orange;
+}
+
+.purpleBtn {
+  background-color: purple;
+}
+
+.greenBtn {
+  background-color: green;
+}
+
+.redBtn:hover, .orangeBtn:hover, .purpleBtn:hover, .greenBtn:hover {
+  width: 160px;
+  transition: width 300ms ease-in-out;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid black;
+  box-shadow: none;
+}
+
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  width: 160px;
+  transition: width 500ms, opacity 500ms, visibility 500ms ease-in;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  width: 0px;
+  transition: width 500ms, opacity 200ms, visibility 300ms ease-out;
+}
+
+.sidebar-dropdownContent ul li button.activeState {
+  width: 160px;
+  border: 2px solid #121212;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: none;
+}
+
